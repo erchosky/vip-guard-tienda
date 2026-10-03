@@ -1,6 +1,8 @@
 # VIP Guard + Tienda
 
-Un canal VIP de pago en Telegram, un escaparate dentro de Telegram y **un único panel de control** para gestionarlo todo sin tocar código.
+Para llevar un **canal VIP de pago y una tienda dentro de Telegram** desde el mismo panel. Miembros, pagos, planes, productos, ofertas y clientes, sin tener que tocar código cada vez que quieres cambiar un precio.
+
+La gracia es tenerlo todo junto y dejar que el bot se encargue de los accesos y los avisos.
 
 | Pieza | Quién la usa | Qué hace |
 |---|---|---|
@@ -49,7 +51,7 @@ Cada persona tiene una ficha con su VIP (días restantes e historial), pagos, co
 
 ---
 
-## Estructura técnica
+## Qué hay por dentro
 
 ```
 app/                    Páginas y API (Next.js 15, App Router)
@@ -71,7 +73,7 @@ scripts/                Entorno local, pruebas SQL, ZIP limpio
 
 Más detalle en [docs/ARQUITECTURA.md](docs/ARQUITECTURA.md). Las decisiones de producto están en [docs/REWORK_PLAN.md](docs/REWORK_PLAN.md).
 
-## Comandos
+## Arrancarlo y hacer las comprobaciones
 
 ```bash
 npm ci                 # instalar
