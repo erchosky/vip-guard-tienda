@@ -1,8 +1,6 @@
 # VIP Guard + Tienda
 
-Para llevar un **canal VIP de pago y una tienda dentro de Telegram** desde el mismo panel. Miembros, pagos, planes, productos, ofertas y clientes, sin tener que tocar código cada vez que quieres cambiar un precio.
-
-La gracia es tenerlo todo junto y dejar que el bot se encargue de los accesos y los avisos.
+Monté esto para llevar un **canal VIP de pago y una tienda dentro de Telegram** sin tener que ir saltando entre mil sitios. Desde el panel se gestionan miembros, pagos, planes, productos, ofertas y clientes; el bot se encarga de los accesos y los avisos.
 
 | Pieza | Quién la usa | Qué hace |
 |---|---|---|
