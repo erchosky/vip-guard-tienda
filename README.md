@@ -1,19 +1,10 @@
 # VIP Guard + Tienda
 
-Monté esto para llevar un **canal VIP de pago y una tienda dentro de Telegram** sin tener que ir saltando entre mil sitios. Desde el panel se gestionan miembros, pagos, planes, productos, ofertas y clientes; el bot se encarga de los accesos y los avisos.
+Gestión de un canal VIP de pago y una tienda dentro de Telegram. El bot coordina accesos y avisos; el panel reúne miembros, planes, productos, ventas y clientes.
 
-| Pieza | Quién la usa | Qué hace |
-|---|---|---|
-| **Bot** | Clientes | `/start`, ver planes, pedir un plan, recibir el acceso, avisos antes de caducar, entrar al canal |
-| **Panel VIP Guard** | Vosotros | Miembros, pagos, planes y precios, textos del bot, canal, alertas, difusión opcional |
-| **MiniApp Tienda** | Cualquiera que abra el bot | Escaparate con fotos, ofertas con cuenta atrás, precio VIP y botón «Me interesa» |
-| **Panel Tienda** | Vosotros | Productos, fotos, precios, ofertas, ventas, intereses, textos, marca |
+Los pagos se registran manualmente. Para configurar la primera publicación, consulta [la guía de puesta en marcha](docs/PUESTA_EN_MARCHA.md).
 
-Los dos paneles son el mismo: en la cabecera hay un interruptor **VIP Guard ⇄ Tienda**, junto al de modo claro/oscuro.
-
-**No hay pasarela de pagos.** Se cobra por Bizum o PayPal y el pago se registra en el panel con un botón, que suma los días y hace que el bot mande el acceso.
-
-➡️ **Para publicarla por primera vez, sigue [docs/PUESTA_EN_MARCHA.md](docs/PUESTA_EN_MARCHA.md).**
+[Cómo funciona](#cómo-funciona) · [Arquitectura](#arquitectura) · [Arrancarlo y hacer las comprobaciones](#arrancarlo-y-hacer-las-comprobaciones)
 
 ---
 
@@ -49,7 +40,7 @@ Cada persona tiene una ficha con su VIP (días restantes e historial), pagos, co
 
 ---
 
-## Qué hay por dentro
+## Arquitectura
 
 ```
 app/                    Páginas y API (Next.js 15, App Router)
